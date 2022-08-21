@@ -1,0 +1,259 @@
+{
+  "contractName": "ISemaphoreCore",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "nullifierHash",
+          "type": "uint256"
+        }
+      ],
+      "name": "NullifierHashAdded",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"nullifierHash\",\"type\":\"uint256\"}],\"name\":\"NullifierHashAdded\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"Interface of SemaphoreCore contract.\",\"events\":{\"NullifierHashAdded(uint256)\":{\"params\":{\"nullifierHash\":\": Hash of external and identity nullifiers.\"}}},\"kind\":\"dev\",\"methods\":{},\"title\":\"SemaphoreCore interface.\",\"version\":1},\"userdoc\":{\"events\":{\"NullifierHashAdded(uint256)\":{\"notice\":\"Emitted when a proof is verified correctly and a new nullifier hash is added.\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@appliedzkp/semaphore-contracts/interfaces/ISemaphoreCore.sol\":\"ISemaphoreCore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@appliedzkp/semaphore-contracts/interfaces/ISemaphoreCore.sol\":{\"keccak256\":\"0x00259e30ecf574e0b731cecc846aa9877a2dc6a7e243d5e93013bb9074361013\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7bb97443e2c458eef864585ffe40a12db29290ff5b747d29703011e748fe389e\",\"dweb:/ipfs/QmWKsk12pLNaA2VH3yJYu3Kv94Vt5UK15YDBja1hYqoAvN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "//SPDX-License-Identifier: MIT\npragma solidity ^0.8.4;\n\n/// @title SemaphoreCore interface.\n/// @dev Interface of SemaphoreCore contract.\ninterface ISemaphoreCore {\n  /// @notice Emitted when a proof is verified correctly and a new nullifier hash is added.\n  /// @param nullifierHash: Hash of external and identity nullifiers.\n  event NullifierHashAdded(uint256 nullifierHash);\n}\n",
+  "sourcePath": "@appliedzkp\\semaphore-contracts\\interfaces\\ISemaphoreCore.sol",
+  "ast": {
+    "absolutePath": "@appliedzkp/semaphore-contracts/interfaces/ISemaphoreCore.sol",
+    "exportedSymbols": {
+      "ISemaphoreCore": [
+        133
+      ]
+    },
+    "id": 134,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 126,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISemaphoreCore",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 127,
+          "nodeType": "StructuredDocumentation",
+          "src": "56:82:2",
+          "text": "@title SemaphoreCore interface.\n @dev Interface of SemaphoreCore contract."
+        },
+        "fullyImplemented": true,
+        "id": 133,
+        "linearizedBaseContracts": [
+          133
+        ],
+        "name": "ISemaphoreCore",
+        "nameLocation": "148:14:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 128,
+              "nodeType": "StructuredDocumentation",
+              "src": "167:159:2",
+              "text": "@notice Emitted when a proof is verified correctly and a new nullifier hash is added.\n @param nullifierHash: Hash of external and identity nullifiers."
+            },
+            "id": 132,
+            "name": "NullifierHashAdded",
+            "nameLocation": "335:18:2",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 130,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "nullifierHash",
+                  "nameLocation": "362:13:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 132,
+                  "src": "354:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 129,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "353:23:2"
+            },
+            "src": "329:48:2"
+          }
+        ],
+        "scope": 134,
+        "src": "138:241:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "31:349:2"
+  },
+  "legacyAST": {
+    "absolutePath": "@appliedzkp/semaphore-contracts/interfaces/ISemaphoreCore.sol",
+    "exportedSymbols": {
+      "ISemaphoreCore": [
+        133
+      ]
+    },
+    "id": 134,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 126,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:23:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISemaphoreCore",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 127,
+          "nodeType": "StructuredDocumentation",
+          "src": "56:82:2",
+          "text": "@title SemaphoreCore interface.\n @dev Interface of SemaphoreCore contract."
+        },
+        "fullyImplemented": true,
+        "id": 133,
+        "linearizedBaseContracts": [
+          133
+        ],
+        "name": "ISemaphoreCore",
+        "nameLocation": "148:14:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 128,
+              "nodeType": "StructuredDocumentation",
+              "src": "167:159:2",
+              "text": "@notice Emitted when a proof is verified correctly and a new nullifier hash is added.\n @param nullifierHash: Hash of external and identity nullifiers."
+            },
+            "id": 132,
+            "name": "NullifierHashAdded",
+            "nameLocation": "335:18:2",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 130,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "nullifierHash",
+                  "nameLocation": "362:13:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 132,
+                  "src": "354:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 129,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "354:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "353:23:2"
+            },
+            "src": "329:48:2"
+          }
+        ],
+        "scope": 134,
+        "src": "138:241:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "31:349:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.10+commit.fc410830.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-08-21T05:28:43.737Z",
+  "devdoc": {
+    "details": "Interface of SemaphoreCore contract.",
+    "events": {
+      "NullifierHashAdded(uint256)": {
+        "params": {
+          "nullifierHash": ": Hash of external and identity nullifiers."
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {},
+    "title": "SemaphoreCore interface.",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "NullifierHashAdded(uint256)": {
+        "notice": "Emitted when a proof is verified correctly and a new nullifier hash is added."
+      }
+    },
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

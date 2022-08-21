@@ -1,0 +1,23 @@
+.DAOContainer {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 48 px;
+    max-width: 100%;
+}
+.top,
+.bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+.top {
+    top: 0;
+    background-color: orange;
+}
+
+.bottom {
+    bottom: 0;
+    background-color: green;
+}
