@@ -107,7 +107,7 @@ module.exports =(app)=> {
         ({ maxFeePerGas, maxPriorityFeePerGas } = await calcFeeData(maxFeePerGas,maxPriorityFeePerGas))
         maxFeePerGas = ether.utils.parseUnits(maxFeePerGas, "gwei")
         maxPriorityFeePerGas = ether.utils.parseUnits(maxPriorityFeePerGas, "gwei")
-        console.log(maxFeePerGas,maxPriorityFeePerGas)
+        // console.log(maxFeePerGas,maxPriorityFeePerGas)
 
         try{
             const totalVote = await contract.castVote(vote,identity,nullifierHash,pollId,groupId,proof,{

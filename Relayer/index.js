@@ -87,13 +87,13 @@ app.get("/getIdentity", async(req,res) => {
 app.post("/updateGroup", async (req,res) => {
     try {
         const {provider,name,root,channelID,depth,CID,groupId,identity,role,type} = req.body
-        console.log(req.body)
+        // console.log(req.body)
         var channelName = name
         var maxFeePerGas ,maxPriorityFeePerGas
         ({ maxFeePerGas, maxPriorityFeePerGas } = await calcFeeData(maxFeePerGas,maxPriorityFeePerGas))
         maxFeePerGas = ether.utils.parseUnits(maxFeePerGas, "gwei")
         maxPriorityFeePerGas = ether.utils.parseUnits(maxPriorityFeePerGas, "gwei")
-        console.log(maxFeePerGas,maxPriorityFeePerGas)
+        // console.log(maxFeePerGas,maxPriorityFeePerGas)
         if(type === true){
             channelName = ether.utils.formatBytes32String(name)
         }
@@ -113,9 +113,9 @@ app.post("/updateGroup", async (req,res) => {
             maxPriorityFeePerGas,
             maxFeePerGas
         })
-        console.log(transaction) 
+        // console.log(transaction) 
         const result = await transaction.wait()  
-        console.log(result)
+        // console.log(result)
         res.status(200).send({"result":"Success","error":''}).end()
         
     } catch (error) {
