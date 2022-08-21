@@ -21,6 +21,7 @@ ZK proof generated while casting vote. So it will take sometime to complete tran
 
 ## Resource
 #### Contract Address:- 0xB8590Db0744D508168d0DaE4F0aE4368fC3E10de
+#### Polygon Scan URL:- https://mumbai.polygonscan.com/address/0xb8590db0744d508168d0dae4f0ae4368fc3e10de
 #### UI:- https://glittering-choux-f79be5.netlify.app/
 #### Demo:- https://vimeo.com/741542407
 
